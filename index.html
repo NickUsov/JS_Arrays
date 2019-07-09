@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Arrays</title>
+</head>
+<body>
+    <script>
+         // 1.
+    /*let arr = [{
+        name: 'apple',
+        quantity: 5,
+        buy: true},
+        {
+            name: 'coconut',
+            quantity: 4,
+            buy: false},
+        {
+            name: 'pork',
+            quantity: 1.5,
+            buy: true},
+        {
+            name: 'banana',
+            quantity: 3,
+            buy: false},
+        {
+            name: 'eggs',
+            quantity: 10,
+            buy: false}];
+    function ShowArray(arr) {
+        for(let i = 0; i < arr.length; i++) {
+            if(arr[i].buy == false) {
+                document.write(arr[i].name + ' ' + arr[i].quantity + ' ' + arr[i].buy + '<br>');
+            }
+        }
+        for(let i = 0; i < arr.length; i++) {
+            if(arr[i].buy == true) {
+                document.write(arr[i].name + ' ' + arr[i].quantity + ' ' + arr[i].buy + '<br>');
+            }
+        }
+    }
+    function AddToArray(arr, obj) {
+        for(let i = 0; i < arr.length; i++) {
+            if(arr[i].name == obj.name) {
+                arr[i].quantity += obj.quantity;
+                arr[i].buy = true;
+                return arr;
+            }
+        }
+        return arr.push(obj);
+    };
+    function Buying(arr, product) {
+        for(let i = 0; i < arr.length; i++) {
+            if(arr[i].name == product) {
+                arr[i].buy = true;
+                break;
+            }
+        }
+    }
+    let buing= {
+        name: 'beckon',
+        quantity: 2,
+        buy: true
+    };
+    let buying = {
+        name: 'eggs',
+        quantity: 10,
+        buy: false};
+    ShowArray(arr);
+    AddToArray(arr, buing);
+    AddToArray(arr, buying);
+    ShowArray(arr);
+    Buying(arr, 'banana');
+    ShowArray(arr);*/
+
+   // 2.
+    // let brr = [{
+    //   name: 'apple',
+    //   quantity: 5,
+    //   cost: 10
+    // },
+    //     {
+    //     name: 'banana',
+    //     quantity: 3,
+    //     cost: 9
+    //     },
+    //     {
+    //     name: 'peach',
+    //     quantity: 3.5,
+    //     cost: 14
+    //     }];
+    // function ShowTab(brr) {
+    //     for(let  i = 0; i < brr.length; i++) {
+    //         document.write('Product: ' + brr[i].name + ', Quantity: ' + brr[i].quantity + 'pounds, Cost: ' + brr[i].cost+ ' $; <br>');
+    //     }
+    // }
+    // ShowTab(brr);
+    // function GetTotalCost(brr) {
+    //     let total = 0;
+    //     for(let  i = 0; i < brr.length; i++) {
+    //         total += brr[i].cost;
+    //     }
+    //     return total;
+    // }
+    // document.write(GetTotalCost(brr));
+    // function AvgCost(brr) {
+    //     let avg = 0;
+    //     for(let  i = 0; i < brr.length; i++) {
+    //         avg += brr[i].cost;
+    //     }
+    //     return avg / brr.length;
+    // }
+    // document.write('<br>' + AvgCost(brr));
+
+
+    // 3.
+        // let styles = [{
+        //     name: 'color',
+        //     value: 'red'
+        // },
+        // {
+        //     name: 'font-style',
+        //     value: 'italic'
+        // },
+        // {
+        //     name: 'font-size',
+        //     value: '32px'
+        // },
+        // {
+        //     name: 'background-color',
+        //     value: 'green'
+        // }];
+        // let text = 'Hello, world!';
+        // function GetFormattingText(text, styles) {
+        //     let msg = '<p style ="';
+        //     for(let i = 0; i < styles.length; i++) {
+        //         msg += `${styles[i].name}:${styles[i].value};`;
+        //     }
+        //     return msg += `">${text}</p>`;
+        // }
+        // document.write(GetFormattingText(text, styles));
+
+
+        // 4.
+        // let academy = [{
+        //     number: 1,
+        //     places: 18,
+        //     faculty: 'RPO'
+        // },
+        // {
+        //     number: 2,
+        //     places: 20,
+        //     faculty: 'RPO'},
+        // {
+        //     number: 3,
+        //     places: 16,
+        //     faculty: 'Design'},
+        // {
+        //     number: 4,
+        //     places: 18,
+        //     faculty: 'Design'}];
+        // function ShowAcademy(academy) {
+        //     for(let i = 0; i < academy.length; i++) {
+        //         document.write(`room #${academy[i].number} faculty:${academy[i].faculty} places: ${academy[i].places}<br>`);
+        //     }
+        // }
+        // ShowAcademy(academy);
+        // function ShowFaculty(academy, faculty) {
+        //     for(let i = 0; i < academy.length; i++) {
+        //         if(academy[i].faculty == faculty) {
+        //             document.write(`room #${academy[i].number} faculty:${academy[i].faculty} places: ${academy[i].places}<br>`);
+        //         }
+        //     }
+        // }
+        // ShowFaculty(academy, 'Design');
+        // let group = {
+        //     name: 'Design-17-3',
+        //     faculty: 'Design',
+        //     students: 17
+        // }
+        // function ShowRoomsForGroup(academy, group) {
+        //     for(let i = 0; i < academy.length; i++) {
+        //         if(academy[i].faculty == group.faculty && academy[i].places >= group.students) {
+        //             document.write(`room #${academy[i].number} faculty:${academy[i].faculty} places: ${academy[i].places}<br>`);
+        //         }  
+        //     }
+        // }
+        // ShowRoomsForGroup(academy, group);
+        
+        // function AcademySortByPlaces(academy) {
+        //     return academy.sort((a, b)=>a.places - b.places);
+        // }
+        // ShowAcademy(AcademySortByPlaces(academy));
+        // function AcademySortByName(academy) {
+        //     return academy.sort((a, b)=>(a.faculty > b.faculty)? 1: -1);
+        // }
+        // ShowAcademy(AcademySortByName(academy));
+    </script>
+</body>
+</html>
